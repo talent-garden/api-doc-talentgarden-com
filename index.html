@@ -5,13 +5,9 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta
-            name="description"
-            content="Documentation for the Kittn API"
-        >
     <title>API Reference</title>
-
-    <style media="screen">
+    <link href="https://cdn.talentgarden.com/images/favicon/favicon-32x32.png" rel="icon" type="image/png" />
+    <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .gh {
@@ -150,36 +146,47 @@
 }
 .highlight .vc {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .nn {
   color: #ffffff;
+  background-color: #272822;
+}
+.highlight .nl {
+  color: #ffffff;
+  background-color: #272822;
 }
 .highlight .ni {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .bp {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .vg {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .vi {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .nv, .highlight .vm {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .w {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight {
   color: #ffffff;
+  background-color: #272822;
 }
 .highlight .n, .highlight .py, .highlight .nx {
   color: #ffffff;
-}
-.highlight .nl {
-  color: #f92672;
+  background-color: #272822;
 }
 .highlight .ow {
   color: #f92672;
@@ -200,102 +207,12 @@
   color: #f92672;
 }
     </style>
-    <style media="print">
-      * {
-        -webkit-transition:none!important;
-        transition:none!important;
-      }
-      .highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #586e75;
-}
-.highlight .err {
-  color: #002b36;
-  background-color: #dc322f;
-}
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
-  color: #657b83;
-}
-.highlight .cp {
-  color: #b58900;
-}
-.highlight .nt {
-  color: #b58900;
-}
-.highlight .o, .highlight .ow {
-  color: #93a1a1;
-}
-.highlight .p, .highlight .pi {
-  color: #93a1a1;
-}
-.highlight .gi {
-  color: #859900;
-}
-.highlight .gd {
-  color: #dc322f;
-}
-.highlight .gh {
-  color: #268bd2;
-  background-color: #002b36;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #6c71c4;
-}
-.highlight .kc {
-  color: #cb4b16;
-}
-.highlight .kt {
-  color: #cb4b16;
-}
-.highlight .kd {
-  color: #cb4b16;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #859900;
-}
-.highlight .sa {
-  color: #6c71c4;
-}
-.highlight .sr {
-  color: #2aa198;
-}
-.highlight .si {
-  color: #d33682;
-}
-.highlight .se {
-  color: #d33682;
-}
-.highlight .nn {
-  color: #b58900;
-}
-.highlight .nc {
-  color: #b58900;
-}
-.highlight .no {
-  color: #b58900;
-}
-.highlight .na {
-  color: #268bd2;
-}
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #859900;
-}
-.highlight .ss {
-  color: #859900;
-}
-    </style>
-    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-b12a2749.js"></script>
-
-    <script>
-      $(function() { setupCodeCopy(); });
-    </script>
+    <link href="stylesheets/screen-de2bff2c.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-b4604f6b.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-ce070813.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;Node.js&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,12 +220,9 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="" />
+      <img src="images/logo2-de057424.png" class="logo" alt="" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="Node.js">Node.js</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -320,201 +234,1248 @@
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
-                  </li>
-                  <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
-                  </li>
-                  <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#json-web-token" class="toc-h2 toc-link" data-title="JSON Web Token">JSON Web Token</a>
                   </li>
               </ul>
           </li>
           <li>
+            <a href="#bookings" class="toc-h1 toc-link" data-title="Bookings">Bookings</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#booking-object" class="toc-h2 toc-link" data-title="Booking Object">Booking Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-bookings" class="toc-h2 toc-link" data-title="Get Bookings">Get Bookings</a>
+                  </li>
+                  <li>
+                    <a href="#get-booking-by-id" class="toc-h2 toc-link" data-title="Get Booking by ID">Get Booking by ID</a>
+                  </li>
+                  <li>
+                    <a href="#create-booking" class="toc-h2 toc-link" data-title="Create Booking">Create Booking</a>
+                  </li>
+                  <li>
+                    <a href="#delete-booking-by-id" class="toc-h2 toc-link" data-title="Delete Booking by ID">Delete Booking by ID</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#campuses" class="toc-h1 toc-link" data-title="Campuses">Campuses</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#campus-object" class="toc-h2 toc-link" data-title="Campus Object">Campus Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-campuses" class="toc-h2 toc-link" data-title="Get Campuses">Get Campuses</a>
+                  </li>
+                  <li>
+                    <a href="#get-campuses-by-id" class="toc-h2 toc-link" data-title="Get Campuses by ID">Get Campuses by ID</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#users" class="toc-h1 toc-link" data-title="Users">Users</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#user-object" class="toc-h2 toc-link" data-title="User Object">User Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-users" class="toc-h2 toc-link" data-title="Get Users">Get Users</a>
+                  </li>
+                  <li>
+                    <a href="#get-user-by-id" class="toc-h2 toc-link" data-title="Get User by ID">Get User by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-my-user" class="toc-h2 toc-link" data-title="Get My User">Get My User</a>
+                  </li>
+                  <li>
+                    <a href="#create-user" class="toc-h2 toc-link" data-title="Create User">Create User</a>
+                  </li>
+                  <li>
+                    <a href="#update-user" class="toc-h2 toc-link" data-title="Update User">Update User</a>
+                  </li>
+                  <li>
+                    <a href="#create-device" class="toc-h2 toc-link" data-title="Create Device">Create Device</a>
+                  </li>
+                  <li>
+                    <a href="#get-devices" class="toc-h2 toc-link" data-title="Get Devices">Get Devices</a>
+                  </li>
+                  <li>
+                    <a href="#get-roles" class="toc-h2 toc-link" data-title="Get Roles">Get Roles</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#resources" class="toc-h1 toc-link" data-title="Resources">Resources</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#resource-object" class="toc-h2 toc-link" data-title="Resource Object">Resource Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-resources" class="toc-h2 toc-link" data-title="Get Resources">Get Resources</a>
+                  </li>
+                  <li>
+                    <a href="#get-resources-by-id" class="toc-h2 toc-link" data-title="Get Resources by ID">Get Resources by ID</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#organizations" class="toc-h1 toc-link" data-title="Organizations">Organizations</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#organization-object" class="toc-h2 toc-link" data-title="Organization Object">Organization Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-organization" class="toc-h2 toc-link" data-title="Get Organization">Get Organization</a>
+                  </li>
+                  <li>
+                    <a href="#get-organization-by-id" class="toc-h2 toc-link" data-title="Get Organization by ID">Get Organization by ID</a>
+                  </li>
+                  <li>
+                    <a href="#update-organization" class="toc-h2 toc-link" data-title="Update Organization">Update Organization</a>
+                  </li>
+                  <li>
+                    <a href="#get-organization-members" class="toc-h2 toc-link" data-title="Get Organization Members">Get Organization Members</a>
+                  </li>
+                  <li>
+                    <a href="#update-organization-member-role" class="toc-h2 toc-link" data-title="Update Organization Member Role">Update Organization Member Role</a>
+                  </li>
+                  <li>
+                    <a href="#delete-member" class="toc-h2 toc-link" data-title="Delete Member">Delete Member</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#invitations" class="toc-h1 toc-link" data-title="Invitations">Invitations</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#invitation-object" class="toc-h2 toc-link" data-title="Invitation Object">Invitation Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-invitation" class="toc-h2 toc-link" data-title="Get Invitation">Get Invitation</a>
+                  </li>
+                  <li>
+                    <a href="#create-invitation" class="toc-h2 toc-link" data-title="Create Invitation">Create Invitation</a>
+                  </li>
+                  <li>
+                    <a href="#delete-invitation" class="toc-h2 toc-link" data-title="Delete Invitation">Delete Invitation</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#events" class="toc-h1 toc-link" data-title="Events">Events</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#event-object" class="toc-h2 toc-link" data-title="Event Object">Event Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-events" class="toc-h2 toc-link" data-title="Get All Events">Get All Events</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pagination" class="toc-h1 toc-link" data-title="Pagination">Pagination</a>
+          </li>
+          <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#error-messages" class="toc-h2 toc-link" data-title="Error Messages">Error Messages</a>
+                  </li>
+              </ul>
           </li>
       </ul>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the TalentGarden API! You can use our API to access TalentGarden API endpoints, which can get information on various events and campuses in our database.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>We have language bindings in Shell! You can view code examples in the dark area to the right.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<!-- docker run --rm --name dp-api-docs -p 4567:4567 -v $(pwd)/source:/srv/slate/source slatedocs/slate serve -->
 <h1 id='authentication'>Authentication</h1>
+<!-- ## API Key
+> To authorize, use this code:
+
+```shell
+# With shell, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "x-api-key: YOUR_API_KEY"
+```
+
+> Make sure to replace `YOUR_API_KEY` with your API key.
+
+API key allows to access to some of our API services.
+This kind of authentication is often used for server to server comminication because API Key does not expire. For this way we highly reccomend to not expose the API Key client-side.
+
+You can request an API key <a href='mailto:digital@talentgarden.org?subject=API key request'>getting in touch with us</a>.
+
+Talent Garden expects the API key to be included in all API requests to the server in a header that looks like the following:
+
+`x-api-key: YOUR_API_KEY`
+
+<aside class="notice">
+You must replace <code>YOUR_API_KEY</code> with your personal API key.
+</aside>
+
+Your API keys carry many privileges, so be sure to keep them secure! 
+Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. -->
+<h3 id='json-web-token'>JSON Web Token</h3>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="c1">// Make the api call with this config </span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
 </code></pre></div>
 <blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+<p>Make sure to replace <code>YOUR_JWT</code> with your JWT.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>JSON Web Token (JWT) authentication is used to call API Services personifying a specific logged user.
+The JWT must be issued from one of our applications registered in our Auth0 tenants.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>To make calls to the API, send the JWT in the Authorization HTTP header using the Bearer authentication scheme.
+Talent Garden expects the JWT to be included in all API requests from the client in a header that looks like the following:</p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<p><code>Authorization: Bearer YOUR_JWT</code></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>YOUR_JWT</code> a valid Auth0 issued token.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>You can request an Auth0 OAuth2 client <a href='mailto:digital@talentgarden.org?subject=Auth0 OAuth2 client request'>getting in touch with us</a>.</p>
+<h1 id='bookings'>Bookings</h1><h2 id='booking-object'>Booking Object</h2>
+<p>An booking object contain all of information of a book.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>resource_id</code></td>
+<td>integer</td>
+<td>Identify the resource of the book.</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td>integer</td>
+<td>Identify the user that book a resource.</td>
+</tr>
+<tr>
+<td><code>from</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of star of book.</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of finish book.</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of book creation.</td>
+</tr>
+<tr>
+<td><code>update_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of last update.</td>
+</tr>
+<tr>
+<td><code>organization_id</code></td>
+<td>integer</td>
+<td>From which organization you did the booking.</td>
+</tr>
+</tbody></table>
+<h2 id='get-bookings'>Get Bookings</h2><h4 id='http-request'>HTTP Request</h4>
+<p>With this request you can get all information about the all booking. <br></br>
+<code>GET https://api.talentgarden.com/v1/bookings</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://api.talentgarden.com/v1/bookings`</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">})</span>
 </code></pre></div>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"resource_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11152"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-26T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-26T09:30:00.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T16:14:19.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T16:14:19.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"resource_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11152"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-09T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-09T09:30:00.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T17:31:26.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T17:31:26.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h4 id='query-parameters'>Query Parameters</h4>
+<p>You can use this parameter to filter the bookings or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>resource_id</code></td>
+<td>24 or 24,25,26</td>
+<td>Return only bookings with specified <code>resource_id</code> or multiple <code>resource_id</code>.</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td>1</td>
+<td>Return only bookings with specified <code>user_id</code>.</td>
+</tr>
+<tr>
+<td><code>from</code></td>
+<td>2021-11-25T08:00:00.000Z</td>
+<td>Return all bookings grater or equal of parameter</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>2021-11-25T08:00:00.000Z</td>
+<td>Return all bookings less or equal of parameter</td>
+</tr>
+<tr>
+<td><code>sortby</code></td>
+<td>from</td>
+<td>Return all bookings sorted by the fields of object.</td>
+</tr>
+</tbody></table>
+<h2 id='get-booking-by-id'>Get Booking by ID</h2><h4 id='http-request-2'>HTTP Request</h4>
+<p>With this request you can get all information about specific book.  <br></br>
+<code>GET https://api.talentgarden.com/v1/bookings/:id</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://api.talentgarden.com/v1/bookings/64`</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"resource_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11152"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-26T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-26T09:30:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T16:14:19.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T16:14:19.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h4 id='url-parameters'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>The id of the book to retrieve.</td>
+</tr>
+</tbody></table>
+<h2 id='create-booking'>Create Booking</h2><h4 id='http-request-3'>HTTP Request</h4>
+<p>With this request you can create a new book.  <br></br>
+<code>POST https://api.talentgarden.com/v1/bookings</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://api.talentgarden.com/v1/bookings/64`</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">resource_id</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
+    <span class="na">from</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2021-03-09T08:30:00.000Z</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">to</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2021-03-09T09:30:00.000Z</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">organization</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span> 
+<span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"resource_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11152"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-09T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-09T09:30:00.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T17:31:26.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-15T17:31:26.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h4 id='body-parameters'>Body Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>resource_id</td>
+<td>The id of the resource to book.</td>
+</tr>
+<tr>
+<td>from</td>
+<td>booking start date and time.</td>
+</tr>
+<tr>
+<td>to</td>
+<td>booking finish date and time.</td>
+</tr>
+<tr>
+<td>organization_id</td>
+<td>From which organization you do the booking.</td>
+</tr>
+</tbody></table>
+<h2 id='delete-booking-by-id'>Delete Booking by ID</h2><h4 id='http-request-4'>HTTP Request</h4>
+<p>With this request you can delete a book with specific id.  <br></br></p>
+
+<p><code>DELETE https://api.talentgarden.com/v1/bookings/:id</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">).</span><span class="k">default</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://api.talentgarden.com/v1/bookings`</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div><h4 id='url-parameters-2'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>The id of the book to delete.</td>
+</tr>
+</tbody></table>
+<h1 id='campuses'>Campuses</h1><h2 id='campus-object'>Campus Object</h2>
+<p>An booking object contain all of information of a campus.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>Identify the campus.</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>string</td>
+<td>Campus code.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Name of the campus.</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Email of the campus.</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>Address.</td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>string</td>
+<td>City.</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>State.</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The currency of the campus.</td>
+</tr>
+<tr>
+<td><code>square_meters</code></td>
+<td>json</td>
+<td>Square Meters.</td>
+</tr>
+<tr>
+<td><code>desks</code></td>
+<td>boolean</td>
+<td>Status of campus</td>
+</tr>
+<tr>
+<td><code>zip</code></td>
+<td>string</td>
+<td>Type of campus</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Creation date</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td>timestamp with timezone</td>
+<td>Updated date</td>
+</tr>
+<tr>
+<td><code>latitude</code></td>
+<td>double</td>
+<td>Latitude campus</td>
+</tr>
+<tr>
+<td><code>longitude</code></td>
+<td>double</td>
+<td>Longitude of campuses</td>
+</tr>
+</tbody></table>
+<h2 id='get-campuses'>Get Campuses</h2><h4 id='http-campuses-request'>HTTP Campuses Request</h4>
+<p>With this request you can get the information about the campuses <br></br>
+<code>GET https://api.talentgarden.com/v1/campuses</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/campuses"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"data"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BCT"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden Barcelona Turrò"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"barcelona@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carrer Ramón Turró 169-A"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Barcelona"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CT"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ES"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+34910780234"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"square_meters"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"desks"</span><span class="p">:</span><span class="w"> </span><span class="mi">326</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08005"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-11T11:36:14.416Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-11T11:36:14.416Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">41.3986556</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.2010949</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sender_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TAGBarca"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Barcellona"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BSC"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden Brescia"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"brescia@talentgarden.it"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Via Cipro 66"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brescia"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BS"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IT"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+390305537045"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"square_meters"</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"desks"</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25124"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-10-09T12:18:53.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-04T10:50:05.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">45.5246252</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.2102432</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sender_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TAGBrescia"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brescia"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span></code></pre></div><h4 id='query-campuses-parameters'>Query Campuses Parameters</h4>
+<p>You can use this parameter to filter the bookings or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>code</code></td>
+<td>RMO</td>
+<td>Return only campus with specified <code>code</code>.</td>
+</tr>
+</tbody></table>
+<h2 id='get-campuses-by-id'>Get Campuses by ID</h2><h4 id='http-campuses-request-2'>HTTP Campuses Request</h4>
+<p>With this request you can get all information about specific campus.  <br></br>
+<code>GET https://api.talentgarden.com/v1/campuses/:id</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/campuses/48"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden Vienna Liechtensteinstraße"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vienna@talentgarden.at"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Liechtensteinstraße 111-115"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wien"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wien"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+4312058183"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"square_meters"</span><span class="p">:</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"desks"</span><span class="p">:</span><span class="w"> </span><span class="mi">420</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1090"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-11-28T17:14:57.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-06T15:35:48.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">48.2284578</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">16.3558698</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"sender_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TAGWien"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wien"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='users'>Users</h1><h2 id='user-object'>User Object</h2>
+<p>An user object contain all of information of a user.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>Identify the user.</td>
+</tr>
+<tr>
+<td><code>auth0_id</code></td>
+<td>string</td>
+<td>Identify the user into auth0 system.</td>
+</tr>
+<tr>
+<td><code>first_name</code></td>
+<td>string</td>
+<td>The first name of the user.</td>
+</tr>
+<tr>
+<td><code>last_name</code></td>
+<td>string</td>
+<td>The last name of the user.</td>
+</tr>
+<tr>
+<td><code>full_name</code></td>
+<td>string</td>
+<td>The full name of the user.</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>The email of the user.</td>
+</tr>
+<tr>
+<td><code>phone_prefix</code></td>
+<td>string</td>
+<td>The phone prefix of the user&#39;s number.</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td>integer</td>
+<td>The phone number of th user.</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of user creation.</td>
+</tr>
+<tr>
+<td><code>update_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of last update data user.</td>
+</tr>
+<tr>
+<td><code>date_of_birth</code></td>
+<td>date</td>
+<td>Date of birthday of the user.</td>
+</tr>
+<tr>
+<td><code>deleted</code></td>
+<td>boolean</td>
+<td>True if the user was deleted.</td>
+</tr>
+<tr>
+<td><code>last_access</code></td>
+<td>date</td>
+<td>Date of last access.</td>
+</tr>
+<tr>
+<td><code>last_access_campus</code></td>
+<td>integer</td>
+<td>Identify the campus.</td>
+</tr>
+</tbody></table>
+<h2 id='get-users'>Get Users</h2><h4 id='http-users-request'>HTTP Users Request</h4>
+<p>With this request you can get all information about the all users.<br></br> <strong>Only admin can use this endpoint</strong> <br></br>
+<code>GET https://api.talentgarden.com/v1/users</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"22"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="s2">"auth0|123456789012345667"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="s2">"Mario"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"full_name"</span><span class="p">:</span><span class="s2">"Mario Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="s2">"mariorossi@tag.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="s2">"2235641240"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"created_at"</span><span class="p">:</span><span class="s2">"2014-10-08T10:20:10.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="s2">"2020-11-16T12:15:42.889Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="s2">"1984-08-28T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"deleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access"</span><span class="p">:</span><span class="s2">"2014-10-08T10:20:10.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">...</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h4 id='query-users-parameters'>Query Users Parameters</h4>
+<p>You can use this parameter to filter the users or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>email</code></td>
+<td>mariorossi@tag.it</td>
+<td>Return only user with specified <code>email</code>.</td>
+</tr>
+<tr>
+<td><code>full_name</code></td>
+<td>mario rossi</td>
+<td>Return only user with specified <code>full_name</code>.</td>
+</tr>
+<tr>
+<td><code>sort_by</code></td>
+<td>email</td>
+<td>Return all bookings sorted by email.</td>
+</tr>
+<tr>
+<td><code>sort_by_desc</code></td>
+<td>full_name</td>
+<td>Return all bookings sorted by full name in descending order.</td>
+</tr>
+</tbody></table>
+<h2 id='get-user-by-id'>Get User by ID</h2><h4 id='http-users-request-2'>HTTP Users Request</h4>
+<p>With this request you can get all information about user selected by id.  <br></br>
+<code>GET https://api.talentgarden.com/v1/users/22</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users/22"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"22"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="s2">"auth0|123456789012345667"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="s2">"Mario"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"full_name"</span><span class="p">:</span><span class="s2">"Mario Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="s2">"mariorossi@tag.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="s2">"2235641240"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"created_at"</span><span class="p">:</span><span class="s2">"2014-10-08T10:20:10.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="s2">"2020-11-16T12:15:42.889Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="s2">"1984-08-28T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access"</span><span class="p">:</span><span class="s2">"2014-10-08T10:20:10.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='get-my-user'>Get My User</h2><h4 id='http-users-request-3'>HTTP Users Request</h4>
+<p>With this request you can get all information about own user.  <br></br>
+<code>GET https://api.talentgarden.com/v1/users/me</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users/me"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"22"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="s2">"auth0|123456789012345667"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"first_name"</span><span class="p">:</span><span class="s2">"Mario"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_name"</span><span class="p">:</span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"full_name"</span><span class="p">:</span><span class="s2">"Mario Rossi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"email"</span><span class="p">:</span><span class="s2">"mariorossi@tag.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="s2">"2235641240"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"created_at"</span><span class="p">:</span><span class="s2">"2014-10-08T10:20:10.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="s2">"2020-11-16T12:15:42.889Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date_of_birth"</span><span class="p">:</span><span class="s2">"1984-08-28T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1970-01-20T03:08:08.323Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='create-user'>Create User</h2><h4 id='http-users-request-4'>HTTP Users Request</h4>
+<p>With this request you can insert a new user.
+  <br></br>
+<code>POST https://api.talentgarden.com/v1/users</code></p>
+<h4 id='body-user-parameters'>Body User Parameters</h4>
+<p>You can use this parameter to create new user.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>first_name</code></td>
+<td>mario</td>
+</tr>
+<tr>
+<td><code>last_name</code></td>
+<td>rossi</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>mariorossi@tag.it</td>
+</tr>
+<tr>
+<td><code>phone_prefix</code></td>
+<td>+39</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td>3391029463</td>
+</tr>
+<tr>
+<td><code>date_of_birth</code></td>
+<td>1995-10-10</td>
+</tr>
+</tbody></table>
+<h5 id='attention'>Attention</h5>
+<p>The fields <strong>first_name</strong>, <strong>last_name</strong>, <strong>email</strong>, <strong>phone_prefix</strong> and <strong>phone_number</strong> are mandatory.</p>
+<h2 id='update-user'>Update User</h2><h4 id='http-users-request-5'>HTTP Users Request</h4>
+<p>With this request you can get all information about specific user.
+  <br></br>
+<code>PATCH https://api.talentgarden.com/v1/users/:id</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> PATCH <span class="s2">"https://api.talentgarden.com/v1/users/:id"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div><h4 id='body-users-parameters'>Body Users Parameters</h4>
+<p>You can use this parameter to update data of specific user.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>first_name</code></td>
+<td>mario</td>
+</tr>
+<tr>
+<td><code>last_name</code></td>
+<td>rossi</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>mariorossi@tag.it</td>
+</tr>
+<tr>
+<td><code>phone_prefix</code></td>
+<td>+39</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td>3391029463</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>123456#„«#“‘#789</td>
+</tr>
+<tr>
+<td><code>profile_image</code></td>
+<td>file.jpg</td>
+</tr>
+</tbody></table>
+<h5 id='attention-2'>Attention</h5>
+<p>To update user&#39;s passwords it is necessary that the email field is not present.</p>
+
+<p>To update your profile <strong>image</strong> you need to use <strong>form-data</strong> payload.</p>
+<h2 id='create-device'>Create Device</h2><h4 id='http-users-request-6'>HTTP Users Request</h4>
+<p>With this request you can insert new user&#39;s device.
+  <br></br>
+<code>POST https://api.talentgarden.com/v1/users/devices</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-x</span> POST <span class="s2">"https://api.talentgarden.com/v1/users/devices"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+      <span class="nt">--data</span> <span class="o">{</span><span class="s2">"token"</span>: <span class="s2">"sdkalsfkhalsfhjalncaukeab"</span>,<span class="s2">"manufacturer"</span>: <span class="s2">"OnePlus"</span>,<span class="s2">"mac_address"</span>: <span class="s2">"P1:28:57:13:J2:C4"</span>,<span class="s2">"model"</span>: <span class="s2">"ONEPLUS A5000"</span>,<span class="s2">"product"</span>: <span class="s2">"OnePlus5"</span>, <span class="s2">"platform"</span>: <span class="s2">"Android"</span><span class="o">}</span>
+</code></pre></div><h4 id='body-device-parameters'>Body Device Parameters</h4>
+<p>You can use this parameter to insert data of specific device.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>token</code></td>
+<td>sdkalsfkhalsfhjalncaukeabkcjabfkauevbaevkauefkaubvclaevbleaivbalv,</td>
+</tr>
+<tr>
+<td><code>manufacturer</code></td>
+<td>OnePlus</td>
+</tr>
+<tr>
+<td><code>mac_address</code></td>
+<td>XX:XS:11:11:X1:X1</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>ONEPLUS A5000</td>
+</tr>
+<tr>
+<td><code>product</code></td>
+<td>OnePlus5</td>
+</tr>
+<tr>
+<td><code>platform</code></td>
+<td>Android</td>
+</tr>
+</tbody></table>
+
+<p>The <strong>mac_address</strong> parameter is <strong>mandatory</strong></p>
+<h2 id='get-devices'>Get Devices</h2><h4 id='http-devices-request'>HTTP Devices Request</h4>
+<p>With this request you can get all information about own devices.  <br></br>
+<code>GET https://api.talentgarden.com/v1/users/:id/devices</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users/00000/devices"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns Array structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sdkalsfkhalsfhjalncaukeabkcjv"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"manufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Iphone XX"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"mac_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c6:00:00:00:f2:c4"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XX"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"product"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OnePlus5"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"platform"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IOS"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-04-28T07:59:04.146Z"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+</span></code></pre></div><h2 id='get-roles'>Get Roles</h2><h4 id='http-devices-request-2'>HTTP Devices Request</h4>
+<p>With this request you can get all information about your roles.  <br></br>
+<code>GET https://api.talentgarden.com/v1/users/me/roles</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users/me/roles"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns Array structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"456"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"admin"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"204"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"owner"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='resources'>Resources</h1><h2 id='resource-object'>Resource Object</h2>
+<p>An booking object contain all of information of a resource.</p>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td><code>campus_id</code></td>
+<td>integer</td>
+<td>Identify the campus of the resource.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td><code>image_url</code></td>
+<td>string</td>
+<td>Identify the url of image.</td>
+</tr>
+<tr>
+<td><code>capacity</code></td>
+<td>integer</td>
+<td>Number of seats in the resource.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Name of the resource.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>Description of the resource.</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of book creation.</td>
+</tr>
+<tr>
+<td><code>update_at</code></td>
+<td>timestamp with timezone</td>
+<td>Date and time of last update.</td>
+</tr>
+<tr>
+<td><code>floor</code></td>
+<td>integer</td>
+<td>Floor number</td>
+</tr>
+<tr>
+<td><code>privacy_level</code></td>
+<td>string</td>
+<td>level of privacy inside the resource</td>
+</tr>
+<tr>
+<td><code>services</code></td>
+<td>json</td>
+<td>Features resource</td>
+</tr>
+<tr>
+<td><code>available</code></td>
+<td>boolean</td>
+<td>Status of resource</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td>Type of resource</td>
+</tr>
+<tr>
+<td><code>organizations</code></td>
+<td>array</td>
+<td>Which organization can see get the resources</td>
+</tr>
+<tr>
+<td><code>purchase_url</code></td>
+<td>string</td>
+<td>url where to buy</td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<h2 id='get-resources'>Get Resources</h2><h4 id='http-resources-request'>HTTP Resources Request</h4>
+<p>With this request you can get the information about the resources, you need to be part at least one organization. <br></br>
+Get your organization id from this <a href="#get-roles">get roles</a> section.
+Return <strong><em>only available</em></strong> resources for your organization <br></br> 
+<code>GET https://api.talentgarden.com/v1/organizations/:id/resources</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/organizations/1/resources"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
 </code></pre></div>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"119"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"campus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting Room Mezzanine"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-06T11:55:40.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-12T11:02:44.496Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"floor"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"privacy_level"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Private"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"natural_light"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"hdmi_cable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"air_conditioned"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"socket"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"whiteboard"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"monitor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"available"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"meeting_room"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organizations"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="nl">"purchase_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"120"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"campus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting Room Floor 2"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-06T12:01:44.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-12T11:02:44.496Z"</span><span class="p">,</span><span class="w">
+            </span><span class="err">...</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"121"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"campus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting Room Floor 3"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-06T12:08:11.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-12T11:02:44.496Z"</span><span class="p">,</span><span class="w">
+            </span><span class="err">...</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
+</span></code></pre></div><h4 id='query-resources-parameters'>Query Resources Parameters</h4>
+<p>You can use this parameter to filter the bookings or you can sort them.</p>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>example</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td><code>campus_id</code></td>
+<td>53</td>
+<td>Return only resources with specified <code>campus_id</code>.</td>
+</tr>
+<tr>
+<td><code>capacity</code></td>
+<td>4</td>
+<td>Return only resources with capacity 4.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>MR01</td>
+<td>Return only resources with name equal MR01.</td>
+</tr>
+<tr>
+<td><code>floor</code></td>
+<td>2</td>
+<td>Return only resources with floor equal to 2.</td>
+</tr>
+<tr>
+<td><code>privacy_level</code></td>
+<td>not_very_private</td>
+<td>Return only resources with privacy_level &#39;not very private&#39;.</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>meeting_room</td>
+<td>Return only resources with type meeting_room.</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-X</span> DELETE <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<h2 id='get-resources-by-id'>Get Resources by ID</h2><h4 id='http-resources-request-2'>HTTP Resources Request</h4>
+<p>With this request you can get all information about specific book.  <br></br>
+<code>GET https://api.talentgarden.com/v1/organizations/:id/resources/:resourceId</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/organizations/1/resources/119"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
 </code></pre></div>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"119"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"campus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"capacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting Room Mezzanine"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-06T11:55:40.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-12T11:02:44.496Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"floor"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"privacy_level"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Private"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"natural_light"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FALSE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"hdmi_cable"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FALSE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"air_conditioned"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TRUE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"socket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TRUE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"whiteboard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FALSE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"monitor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"available"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"meeting_room"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"organizations"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nl">"purchase_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+</span></code></pre></div><h4 id='url-request-parameters'>URL Request Parameters</h4>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -522,16 +1483,825 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>id</td>
+<td>The id of your organization.</td>
+</tr>
+<tr>
+<td>resourceId</td>
+<td>The resource id that you want.</td>
+</tr>
+</tbody></table>
+<h1 id='organizations'>Organizations</h1><h2 id='organization-object'>Organization Object</h2>
+<p>An organization object contain all of information of a organization.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>Identify the organization.</td>
+</tr>
+<tr>
+<td><code>hs_object_id</code></td>
+<td>integer</td>
+<td>Identify the organization into Hubspot system.</td>
+</tr>
+<tr>
+<td><code>netsuite_id</code></td>
+<td>string</td>
+<td>Identify the organization into Netsuite system.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>The name of the organization.</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>The address of the organization.</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td>The country of the organization.</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>The state of the organization.</td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>string</td>
+<td>The city of the organization.</td>
+</tr>
+<tr>
+<td><code>phone_prefix</code></td>
+<td>string</td>
+<td>The phone prefix of the organization&#39;s number.</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td>integer</td>
+<td>The phone number of the organization.</td>
+</tr>
+<tr>
+<td><code>billing_email</code></td>
+<td>string</td>
+<td>Billing email.</td>
+</tr>
+<tr>
+<td><code>pec_email</code></td>
+<td>string</td>
+<td>Pec email.</td>
+</tr>
+<tr>
+<td><code>sdi_code</code></td>
+<td>string</td>
+<td>The SdI is a public legal platform for issuing, transmitting and storing invoices.</td>
+</tr>
+<tr>
+<td><code>postal_code</code></td>
+<td>string</td>
+<td>A postal code is a series of letters for the purpose of sorting mail.</td>
+</tr>
+<tr>
+<td><code>vat</code></td>
+<td>string</td>
+<td>Vat number.</td>
+</tr>
+<tr>
+<td><code>fiscal_code</code></td>
+<td>string</td>
+<td>Fiscal code.</td>
+</tr>
+<tr>
+<td><code>linkedin_url</code></td>
+<td>string</td>
+<td>Linkedin url</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Creation date</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td>timestamp with timezone</td>
+<td>Updated date</td>
+</tr>
+<tr>
+<td><code>expires_at</code></td>
+<td>timestamp with timezone</td>
+<td>Expired date</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td>Which kind of organization</td>
+</tr>
+</tbody></table>
+<h2 id='get-organization'>Get Organization</h2><h4 id='http-organization-request'>HTTP Organization Request</h4>
+<p>With this request you can get all information about own organizations.<br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>GET https://api.talentgarden.com/v1/organizations</code></p>
+
+<p><br></br> <strong>Allow query parameters</strong> <br></br> </p>
+<h4 id='query-organizations-parameters'>Query Organizations Parameters</h4>
+<p>You can use this parameter to filter the organization or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>hs_object_id</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+</tr>
+<tr>
+<td><code>address</code></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+</tr>
+<tr>
+<td><code>city</code></td>
+</tr>
+<tr>
+<td><code>postal_code</code></td>
+</tr>
+<tr>
+<td><code>vat</code></td>
+</tr>
+<tr>
+<td><code>fiscal_code</code></td>
+</tr>
+<tr>
+<td><code>phone</code></td>
+</tr>
+<tr>
+<td><code>pec</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/organizations"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"hs_object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7036330761"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"netsuite_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Via Ostiense 92"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Italy"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Milan"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"prefix_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3339999002"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"billing_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pec_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code_sdi"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"postal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"vat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fiscal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"linkedin_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_elements"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='get-organization-by-id'>Get Organization by ID</h2><h4 id='http-organization-request-2'>HTTP Organization Request</h4>
+<p>With this request you can get all information about user selected by id.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>GET https://api.talentgarden.com/v1/organizations/1</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/organizations/1"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"hs_object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5959981987"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"netsuite_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Gardens"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"billing_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pec_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code_sdi"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"postal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"vat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fiscal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"linkedin_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-04T09:21:37.525Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-10T14:04:59.562Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"expires_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='update-organization'>Update Organization</h2><h4 id='http-organizations-request'>HTTP Organizations Request</h4>
+<p>With this request you can update the organization data.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>PATCH https://api.talentgarden.com/v1/organizations/1</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> PATCH <span class="s2">"https://api.talentgarden.com/v1/organizations/1"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+       <span class="nt">--data</span> <span class="o">{</span><span class="s2">"name"</span>: <span class="s2">"Talent Garden"</span><span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"hs_object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5959981987"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"netsuite_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"billing_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pec_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code_sdi"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"postal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"vat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fiscal_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"linkedin_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-04T09:21:37.525Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-10T14:04:59.562Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"expires_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='get-organization-members'>Get Organization Members</h2><h4 id='http-organizations-request-2'>HTTP Organizations Request</h4>
+<p>With this request you can get all members include in your organization.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>GET https://api.talentgarden.com/v1/organizations/1/members</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl  <span class="s2">"https://api.talentgarden.com/v1/organizations/1/members"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auth0|5a373783e1ff174"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alessandro"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bianchi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alessandro Bianchi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alessandro.bianchi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3338882930"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-10-29T09:07:29.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-07-01T14:12:37.916Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"owner"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"102"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auth0|5bfebb81d42c0ab6b8cb"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Giovanni"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Giovanni Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"giovanni.rossi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"39123446777"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-11-28T17:00:00.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-07-01T14:12:38.110Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-10-13T12:18:04.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"admin"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"103"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auth0|5cc068de10e86693a8"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"luca.rossi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31203945197"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-24T15:46:52.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-07-01T14:12:38.229Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_elements"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='update-organization-member-role'>Update Organization Member Role</h2><h4 id='http-organizations-request-3'>HTTP Organizations Request</h4>
+<p>With this request you can update the role of your members. You can choose admin or member role. The member cannot access to Connect platform, the admin have the access to Connect platform.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>PATCH https://api.talentgarden.com/v1/organizations/1/members/:user_id</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> PATCH <span class="s2">"https://api.talentgarden.com/v1/organizations/1/103"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+       <span class="nt">--data</span> <span class="o">{</span><span class="s2">"role"</span>: <span class="s2">"admin"</span> | <span class="s2">"member"</span> <span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"103"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auth0|5cc068de10e86693a8"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"luca.rossi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31203945197"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-24T15:46:52.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-07-01T14:12:38.229Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"admin"</span><span class="w">
+        </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div><h2 id='delete-member'>Delete Member</h2><h4 id='http-organizations-request-4'>HTTP Organizations Request</h4>
+<p>With this request you can remove members from your organization.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>DELETE https://api.talentgarden.com/v1/organizations/1/members/:user_id</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> DELETE <span class="s2">"https://api.talentgarden.com/v1/organizations/1/103"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"103"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"auth0_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auth0|5cc068de10e86693a8"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luca Rossi"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"luca.rossi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+39"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31203945197"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-24T15:46:52.000Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-07-01T14:12:38.229Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"last_access_campus"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"admin"</span><span class="w">
+        </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div><h1 id='invitations'>Invitations</h1><h2 id='invitation-object'>Invitation Object</h2>
+<p>An organization object contain all of information of a organization.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>Identify the organization.</td>
+</tr>
+<tr>
+<td><code>organization_id</code></td>
+<td>integer</td>
+<td>Identify the organization .</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td>integer</td>
+<td>Identify the user that create the invitation.</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Who receive the invite.</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamp with timezone</td>
+<td>Creation date.</td>
+</tr>
+<tr>
+<td><code>sent_at</code></td>
+<td>timestamp with timezone</td>
+<td>Sending date.</td>
+</tr>
+<tr>
+<td><code>registered_at</code></td>
+<td>timestamp with timezone</td>
+<td>Registration date.</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td>Pending/Registered.</td>
+</tr>
+<tr>
+<td><code>role_id</code></td>
+<td>integer</td>
+<td>Role associates with the invitation.</td>
+</tr>
+</tbody></table>
+<h2 id='get-invitation'>Get Invitation</h2><h4 id='http-invitation-request'>HTTP Invitation Request</h4>
+<p>With this request you can get all information about your inviatation associate with specific organization.<br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>GET https://api.talentgarden.com/v1/organizations/:id/invitations</code></p>
+
+<p><br></br> <strong>Allow query parameters</strong> <br></br> </p>
+<h4 id='query-users-parameters'>Query Users Parameters</h4>
+<p>You can use this parameter to filter the users or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>pending/registered</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/organizations/1/invitations"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16925"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"luigi.bianchi@ext.talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:45.972Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:49.495Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"registered_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pending"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"79"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16925"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mario.rossi@talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T16:26:13.476Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T16:26:14.584Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"registered_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pending"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_elements"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='create-invitation'>Create Invitation</h2><h4 id='http-request'>HTTP Request</h4>
+<p>With this request you can create a new invitation.  <br></br>
+<strong>Only admin or owner of organization can use this endpoint</strong> <br></br>
+!!!<strong>Attention</strong>!!! <br>
+If the email already exists in our database the invited contact will be automatically add to the organization  <br></br>
+<code>POST https://api.talentgarden.com/v1/organizations/:id/invitations</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://api.talentgarden.com/v1/organizations/:id/invitations`</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">accept</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer YOUR_JWT</span><span class="dl">'</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">role</span><span class="p">:</span> <span class="dl">"</span><span class="s2">member</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">user_id</span><span class="p">:</span> <span class="mi">11412</span><span class="p">,</span>
+    <span class="na">email</span><span class="p">:</span> <span class="dl">"</span><span class="s2">newinvitation@test.com</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">}</span> 
+<span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">config</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11412"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"newinvitation@test.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:45.972Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:49.495Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"registered_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pending"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div><h4 id='body-parameters'>Body Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>role</td>
+<td>Role type: admin/member.</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>Who creates the invitation.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The email that receives the invite.</td>
+</tr>
+</tbody></table>
+<h2 id='delete-invitation'>Delete Invitation</h2><h4 id='http-organizations-request'>HTTP Organizations Request</h4>
+<p>With this request you can remove members from your organization.  <br></br> <strong>Only admin or owner of organization can use this endpoint</strong> <br></br></p>
+
+<p><code>DELETE https://api.talentgarden.com/v1/organizations/1/invitations/:inv_id</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> DELETE <span class="s2">"https://api.talentgarden.com/v1/organizations/1/77"</span> <span class="se">\</span>
+      <span class="nt">-H</span> <span class="s2">"Authorization: Bearer YOUR_JWT"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16925"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"anita.kristjansdottir@ext.talentgarden.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:45.972Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-03-13T15:30:49.495Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"registered_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pending"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"member"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='events'>Events</h1><h2 id='event-object'>Event Object</h2>
+<p>An event object contain all of information of a Talent Garden event.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th><div style="width:100%">Description</div></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>organizer_id</code></td>
+<td>integer</td>
+<td>Identify the creator of the event.</td>
+</tr>
+<tr>
+<td><code>event_name</code></td>
+<td>string</td>
+<td>Event name</td>
+</tr>
+<tr>
+<td><code>summary</code></td>
+<td>string</td>
+<td>Event summary. Short summary describing the event and its purpose.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>Event description. Description can be lengthy and have significant formatting.</td>
+</tr>
+<tr>
+<td><code>start_utc</code></td>
+<td>time-stamp</td>
+<td>Event start, date and time.</td>
+</tr>
+<tr>
+<td><code>end_utc</code></td>
+<td>time-stamp</td>
+<td>Event end, date and time.</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td>The status of event is always live.</td>
+</tr>
+<tr>
+<td><code>online_event</code></td>
+<td>boolean</td>
+<td>True = Specifies that the Event is online only.</td>
+</tr>
+<tr>
+<td><code>format_id</code></td>
+<td>integer</td>
+<td>The Format id represents an Event type, for example seminar, workshop or concert.</td>
+</tr>
+<tr>
+<td><code>category_id</code></td>
+<td>integer</td>
+<td>An overarching category that an event falls into (vertical). Examples are “Music”, and “Endurance”.</td>
+</tr>
+<tr>
+<td><code>subcategory_id</code></td>
+<td>integer</td>
+<td>A deeper category to describe the event.</td>
+</tr>
+<tr>
+<td><code>logo_url</code></td>
+<td>string</td>
+<td>The url of event&#39;s logo.</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td>The url of event enable on eventbrite.</td>
+</tr>
+<tr>
+<td><code>locale</code></td>
+<td>string</td>
+<td>Specifies the language of the event.</td>
+</tr>
+<tr>
+<td><code>listed</code></td>
+<td>boolean</td>
+<td>True = Specifies that the Event is public.</td>
+</tr>
+</tbody></table>
+<h2 id='get-all-events'>Get All Events</h2><h4 id='http-request'>HTTP Request</h4>
+<p>With this request you can get all information about the new talent garden events. <br></br>
+<code>GET https://api.talentgarden.net/v1/events</code></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.net/v1/events
+</span></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"126409725893"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"organizer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2888489877"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"event_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Build your online course"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Come produrre corsi online, dal più semplice al più complesso"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Come produrre corsi online, dal più semplice al più complesso"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"start_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-11-10T17:30:00.000Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-11-10T18:30:00.000Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"live"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"online_event"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"format_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"subcategory_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.eventbrite.com/e/build-your-online-course-tickets-126409725893"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"logo_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F115511911%2F63152314247%2F1%2Foriginal.20191009-144842?auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;s=24cc030ffd6e8830d92d84c36e285c9a"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en_GB"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"listed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-27T02:00:48.705Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"organizer_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden Isola - Milano"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123482438297"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"organizer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16030478315"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"event_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Introduction to Full Stack Development | Online Info Event"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Do you want to dive into the world of Coding? Are you ready for a career as a Full Stack Developer?"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Do you want to dive into the world of Coding? Are you ready for a career as a Full Stack Developer?"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"start_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-29T16:00:00.000Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-29T17:00:00.000Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"live"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"online_event"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"format_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"subcategory_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1004</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.eventbrite.com/e/introduction-to-full-stack-development-online-info-event-registration-123482438297"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"logo_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F114522263%2F385833754851%2F1%2Foriginal.20201013-151954?auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;s=c3a33a5b6b3621d390c37b033590dc65"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en_GB"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"listed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-27T02:00:48.705Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"organizer_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talent Garden Austria"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"total_elements"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h4 id='query-parameters'>Query Parameters</h4>
+<p>You can use this parameter to filter the events or you can sort them.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>example</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>organizer_id</code></td>
+<td>1234567890</td>
+<td>Return only events with specified <code>organizer_id</code>.</td>
+</tr>
+<tr>
+<td><code>format_id</code></td>
+<td>1</td>
+<td>Return only events with speecified <code>format_id</code>.</td>
+</tr>
+<tr>
+<td><code>category_id</code></td>
+<td>101</td>
+<td>Return only events with speecified <code>category_id</code>.</td>
+</tr>
+<tr>
+<td><code>sortby</code></td>
+<td>organizer_id</td>
+<td>Return all events sorted by the fields of object.</td>
+</tr>
+</tbody></table>
+<h1 id='pagination'>Pagination</h1>
+<p>It is almost never a good idea to return all resources of your database at once. Consequently, you 
+should provide a pagination mechanism. In this case this mechanism is this json object.</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"total_elements"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">}</span><span class="w"> 
+</span><span class="p">}</span><span class="w"> 
+</span></code></pre></div>
+<p>It&#39;s possible to use the parameters <strong>per_page</strong> and 
+<strong>page</strong>, which are well-known from databases.</p>
+
+<table><thead>
+<tr>
+<th>Filed</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>integer</td>
+<td>The number of elements in one page.</td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>integer</td>
+<td>The current page.</td>
+</tr>
+<tr>
+<td><code>total_elements</code></td>
+<td>integer</td>
+<td>Total number of events.</td>
+</tr>
+<tr>
+<td><code>total_pages</code></td>
+<td>integer</td>
+<td>Total number of pages.</td>
 </tr>
 </tbody></table>
 <h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
+<p>When an error occurs during an API request, you will receive:</p>
 
-<p>The Kittn API uses the following error codes:</p>
+<ul>
+<li>An HTTP error status (in the 400-500 range)</li>
+<li>A JSON response containing more information about the error</li>
+</ul>
 
 <table><thead>
 <tr>
@@ -549,31 +2319,23 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>Forbidden -- The resource requested is hidden for administrators only.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td>Not Found -- The specified resource could not be found.</td>
 </tr>
 <tr>
 <td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td>Method Not Allowed -- You tried to access a resources with an invalid method.</td>
 </tr>
 <tr>
 <td>406</td>
 <td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
 <td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>Too Many Requests -- You&#39;re requesting too many Events! Slow down!</td>
 </tr>
 <tr>
 <td>500</td>
@@ -584,14 +2346,55 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
+<h3 id='error-messages'>Error Messages</h3>
+<p>A typical error response is a JSON with many fields.</p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.talentgarden.com/v1/users?page=asdf&amp;per_page=poasdf
+</span></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid parameters"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"poasdf"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Must Be An Integer"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"param"</span><span class="p">:</span><span class="w"> </span><span class="s2">"per_page"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"query"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asdf"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Must Be An Integer"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"param"</span><span class="p">:</span><span class="w"> </span><span class="s2">"page"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"query"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Errors fields</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>message</td>
+<td>Error description.</td>
+</tr>
+<tr>
+<td>details</td>
+<td>Object with more information</td>
+</tr>
+<tr>
+<td>code</td>
+<td>Id to identified a spacial error, could not be present</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="Node.js">Node.js</a>
           </div>
       </div>
     </div>
