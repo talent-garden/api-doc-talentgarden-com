@@ -22,6 +22,7 @@ Options:
 
 run_build() {
   bundle exec middleman build --clean
+  echo docs.talentgarden.com > ./build/CNAME
 }
 
 parse_args() {
