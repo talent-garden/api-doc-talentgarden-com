@@ -26,7 +26,7 @@ With this request you can get all information about your inviatation associate w
 #### Query Users Parameters
 You can use this parameter to filter the users or you can sort them.
 
-Parameter |
+Parameter | example
 --------- | ---------
 `status` | pending/registered
 
@@ -74,15 +74,18 @@ curl "https://api.talentgarden.com/v1/organizations/1/invitations" \
     }
 }
 ```
-## Create Booking
+## Create Invitation
 
 #### HTTP Request
-With this request you can create a new book.  <br></br>
-`POST https://api.talentgarden.com/v1/bookings`
+With this request you can create a new invitation.  <br></br>
+**Only admin or owner of organization can use this endpoint** <br></br>
+!!!**Attention**!!! <br>
+If the email already exists in our database the invited contact will be automatically add to the organization  <br></br>
+`POST https://api.talentgarden.com/v1/organizations/:id/invitations`
 
 ```js
 const axios = require('axios');
-const url = `https://api.talentgarden.com/v1/bookings/64`
+const url = `https://api.talentgarden.com/v1/organizations/:id/invitations`
 const config = {
   headers: {
     accept: 'application/json',
@@ -90,28 +93,29 @@ const config = {
   },
 };
 const data = {
-    resource_id: 24,
-    from: "2021-03-09T08:30:00.000Z",
-    to: "2021-03-09T09:30:00.000Z",
-    organization: 1,
+    role: "member",
+    user_id: 11412,
+    email: "newinvitation@test.com",
 } 
-axios.post(url, config)
+axios.post(url, config, data)
   .then((response) => { console.log(response) })
   .catch((error) => { console.log(error) })
 ```
 > The above command returns JSON structured like this:
 
 ```json
-{
-        "id": 75,
-        "resource_id": "24",
-        "user_id": "11152",
-        "from": "2021-03-09T08:30:00.000Z",
-        "to": "2021-03-09T09:30:00.000Z",
-        "created_at": "2021-02-15T17:31:26.000Z",
-        "updated_at": "2021-02-15T17:31:26.000Z",
-        "organization_id": 1
-}
+ {
+            "id": "77",
+            "organization_id": "1",
+            "user_id": "11412",
+            "email": "newinvitation@test.com",
+            "created_at": "2022-03-13T15:30:45.972Z",
+            "sent_at": "2022-03-13T15:30:49.495Z",
+            "registered_at": null,
+            "status": "pending",
+            "role_id": 3,
+            "role": "member"
+        },
 ```
 
 #### Body Parameters
